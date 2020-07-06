@@ -55,8 +55,6 @@ class SaveAtivosActivity : AppCompatActivity(), AdapterView.OnItemSelectedListen
                 val alertDialog = alerta.create()
                 alertDialog.show()
             }
-            //  clienteDao.getAll()
-
         })
 
         var listaDeItens = arrayOf(" Bitcoin", "Litecoin", "BCash", "XRP (Ripple)", "Ethereum")

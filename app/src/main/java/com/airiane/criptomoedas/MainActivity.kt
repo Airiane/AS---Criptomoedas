@@ -142,7 +142,6 @@ class MainActivity : AppCompatActivity() {
         override fun onPostExecute(result: ArrayList<MoedaAtivos>?) {
             super.onPostExecute(result)
             update(result as ArrayList<MoedaAtivos>)
-//            txt_totalMoedas.text ="valor" + valorBTC.toString()
 
         }
     }

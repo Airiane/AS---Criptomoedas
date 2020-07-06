@@ -68,8 +68,6 @@ object MoedasComprasHTTP {
     @RequiresApi(Build.VERSION_CODES.O)
     fun readMoedas(json: JSONObject): MoedasCompras? {
         try {
-             //var jsonArray = JSONArray(json)
-
                 val boletim = MoedasCompras(
                     json.getString("high"),
                     json.getString("low"),

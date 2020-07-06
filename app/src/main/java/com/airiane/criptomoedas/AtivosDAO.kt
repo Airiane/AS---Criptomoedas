@@ -17,7 +17,6 @@ class AtivosDAO(context: Context) {
         contextValues.put(ID_COLUMN, ativo.id)
         contextValues.put(NOME_COLUMN, ativo.nome)
         contextValues.put(CODIGO_COLUMN, ativo.codigo)
-       // var soma = soma(ativo)
         contextValues.put(QTD_COLUMN, ativo.qtd)
 
         val resp_id = db.insert(TABELA_ATIVO, null, contextValues)
@@ -29,12 +28,6 @@ class AtivosDAO(context: Context) {
         db.close()
         return msg
     }
-
-//    fun soma(ativo: Ativos_parce) :String{
-//
-//        val sum = "SELECT SUM("+ QTD_COLUMN+") FROM " + NOME_TABELA
-//        return sum
-//    }
 
     fun update(ativo: Ativo): Boolean {
 
